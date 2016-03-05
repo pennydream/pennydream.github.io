@@ -1,31 +1,67 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
-    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
-  </head>
-  <body>
-    <div id='messagesDiv'></div>
-    <input type='text' id='nameInput' placeholder='Name'>
-    <input type='text' id='messageInput' placeholder='Message'>
+      
+    <head>
+        <link rel="icon" href="http://i.imgur.com/CX1kAaT.png">
+        <!meta charset="utf-8">
+        <!meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Brendan Garrett's Web Presense</title>
+        <!meta name="description" content="An interactive getting started guide for Brackets.">
+        <!link rel="stylesheet" href="main.css">
+    </head>
+    <body background = "http://i.imgur.com/4PIQtVv.jpg?3">
+        
+        <h1>Brendan Garrett's Web Presense</h1>
+        <h2>I am a person!</h2>
+        <p>
+            Welcome! 
+            <em>I am actually a very specific human being.</em>
+        </p>
+        <p>On a professional side, I currently work in the NILA lab at Temple University. I am also starting to get involved with an ongoing artificial general intelligence project called NARS. I am <em>still</em> an undergraduate - Neuroscience & Computer Science major.</p>
+        <h3>I have a Wordpress Blog</h3>
+        <p>
+            My friend and I post on this blog. It is about as open ended at it gets. I don't mind criticism.
+        </p>
+        <a href = "http://flashbulbsouls.wordpress.com"style="color: #000000"> Here it is!
+        </a>
+        <p></p>
+        <samp>
+            
+            Lets talk.
+            
+        </samp>
+        <h3>Me, elsewhere on the web:</h3>
+        
+        <ul>
+            <li><a href="https://www.reddit.com/user/pennydreams/">Reddit</a></li>
+            <li><a href="https://twitter.com/pennydreamss">@pennydreamss on Twitter</a></li>
+            <li><a href="https://thepennydreams.bandcamp.com/releases">The Penny Dreams - Bandcamp</a></li>
+            <li><a href="https://flashbulbsouls.wordpress.com/">FlashbulbSouls Worldpress Page</a></li>
+            <li><a href="https://sites.google.com/site/narswang/home">NARS open source AGI</a></li>
+            <li><a href="http://www.cla.temple.edu/nila/">NILA Lab at Temple University</a></li>
+            <li><a>Email me at brendan.garrett312@gmail.com</a></li>
+        </ul>
+        
+        <a href = "https://dl.dropboxusercontent.com/u/5400064/website/helloworld.html"> THIS LINK IS A TEST</a>
+       
+        <p>Feel free to send me a message here: </p>
+        <form action="//formspree.io/brendan.garrett312@gmail.com"
+      method="POST">
+    <input type="text" placeholder="Your name">
+    <input type="email" placeholder="Your email">
+    <textarea placeholder="Your message"></textarea>
+    <input type="submit" value="Send">
+        </form>
+        
+    </body>
     <script>
-      var myDataRef = new Firebase('https://hpzgnmnlobo.firebaseio-demo.com/');
-      $('#messageInput').keypress(function (e) {
-        if (e.keyCode == 13) {
-          var name = $('#nameInput').val();
-          var text = $('#messageInput').val();
-          myDataRef.push({name: name, text: text});
-          $('#messageInput').val('');
-        }
-      });
-      myDataRef.on('child_added', function(snapshot) {
-        var message = snapshot.val();
-        displayChatMessage(message.name, message.text);
-      });
-      function displayChatMessage(name, text) {
-        $('<div/>').text(text).prepend($('<em/>').text(name+': ')).appendTo($('#messagesDiv'));
-        $('#messagesDiv')[0].scrollTop = $('#messagesDiv')[0].scrollHeight;
-      };
-    </script>
-  </body>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-74406764-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </html>
