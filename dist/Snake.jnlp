@@ -2,8 +2,8 @@
 <!-- JNLP File for My Program v1.0 -->  
 <jnlp  
     spec="1.0+"  
-    codebase="http://pennydream.github.io"  
-    href="dist/Snake.jnlp">  
+    codebase="http://pennydream.github.io/dist"  
+    href="Snake.jnlp">  
     <information>  
         <title>Snake v1.0</title>  
         <vendor>Brendan Garrett</vendor>
@@ -16,8 +16,8 @@
     </security>  
     <resources> 
         <j2se version="1.2+"/> 
-        <jar href="dist/Snake.jar"/> 
-        <jar href="dist/lib/SimpleGUI.jar"/>
+        <jar href="Snake.jar"/> 
+        <jar href="lib/SimpleGUI.jar"/>
     </resources>  
     <application-desc main-class="Snake">
     </application-desc>
