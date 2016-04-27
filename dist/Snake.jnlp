@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<!-- JNLP File for My Program v1.0 -->  
+<jnlp  
+    spec="1.0+"  
+    codebase="http://brendangarrett.me"  
+    href="Snake.jnlp">  
+    <information>  
+        <title>Snake v1.0</title>  
+        <vendor>Brendan Garrett</vendor>
+        <description>A program I wrote</description>
+        <icon href="favicon.ico">
+        <offline-allowed/>  
+    </information>  
+    <security>  
+        <all-permissions/>  
+    </security>  
+    <resources> 
+        <j2se version="1.2+"/> 
+        <jar href="Snake.jar"/> 
+    </resources>  
+    <application-desc main-class="Snake">
+    </application-desc>
+</jnlp>
